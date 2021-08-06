@@ -1,4 +1,4 @@
-
+#pragma once
 #include <conio.h>
 
 #include <stdio.h>
@@ -7,22 +7,29 @@
 #include <string.h>
 #include <windows.h>
 
-
+#define WIDTH 165
+#define HEIGHT 44
+#define dai_DS 93
 
 #define COT 5
+#define DONG 1
+
+#define huongdanx 85
+#define huongdany 43
+
 #define COTDS_L 70
 #define COTDS_R 184
-#define DONG 1
+
 #define DONGTD 9
 #define DONGDS_U 3
 #define DONGDS_D 39
 
-#define DONGNHAP1 12
-#define DONGNHAP2 16
-#define DONGNHAP3 20
-#define DONGNHAP4 24
-#define DONGNHAP5 28
-#define DONGNHAP6 32
+#define DONGNHAP1 10
+#define DONGNHAP2 14
+#define DONGNHAP3 18
+#define DONGNHAP4 22
+#define DONGNHAP5 26
+#define DONGNHAP6 30
 #define DONGNHAP7 36
 #define DONGNHAP8 40
 #define DONGNHAP9 44
@@ -32,9 +39,6 @@
 #define RONGKHUNG 2
 #define DAIKHUNG 60
 #define DAIKHUNGNHO 10
-
-#define WIDTH 165
-#define HEIGHT 45
 
 #define NGANG 196
 #define DOC 179
@@ -95,6 +99,14 @@
 #define YES 3
 #define NO 2
 #define CANCEL 0
+#define HOANTAT 3
+#define HUYCHUYEN 0
+#define CONVE 1
+#define HETVE 2
+#define MAX_PAGE_SMALL 15
+#define SODONG 5
+#define NAM 0
+#define NU 1
 
 //A-Z/0-9
 #define A 65

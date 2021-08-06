@@ -1,10 +1,9 @@
+#pragma once
 #include <iostream>
-#include <conio.h>
-#include "cau_truc_du_lieu.h"
+#include "ctdl.h"
 
-using namespace std;
 
-char tdChinh[soItem_MenuChinh][100] = {  "1. Quan ly may bay                                     ",
+char tdChinh[soItem_MenuChinh][100] = { "1. Quan ly may bay                                     ",
 										 "2. Quan ly chuyen bay                                 ",
 										 "3. Dat ve/Huy ve                                      ",
 										 "4. Danh sach hanh khach thuoc 1 chuyen bay            " ,
@@ -13,35 +12,43 @@ char tdChinh[soItem_MenuChinh][100] = {  "1. Quan ly may bay                    
 										 "7. Thong ke so luot thuc hien chuyen bay"
 };
 
-using namespace std;
-
-int main(int argc, char** argv) {
+int main() {
 	int chon;
+	LIST_MB lstMB;
+	PTRChuyenBay lstCB;
+	TREEHanhKhach lstHK;
+
+	int loadmb = loadMB(lstMB);
+
+	initCB(lstCB);
+	int loadcb = loadCB(lstCB, lstMB);
+
+	init_HK(lstHK);
+	int loadhk = loadHK(lstHK);
 	fullScreen();
 	int exit = 1;
 	while (exit) {
 		Normal();
 		system("cls");
+		char str[7];
 		chon = menuDong_Prim(tdChinh);
 		switch (chon) {
 		case 1:
 		{
-			hienThongBao("Chon 1", "Chon 2", "Chon 3", "Chon 4");
+			QLMB(lstMB);
 			break;
-			/*QLMB(lstMB, lstCB);
-			break;*/
 		}
 		case 2:
 		{
-			/*int check = checkHoanTat_CB(lstCB);
+			//int check = checkHoanTat_CB(lstCB);
 			QLCB(lstCB, lstMB);
 			int save = saveCB(lstCB);
-			break;*/
+			break;
 		}
 		case 3:
 		{
-			/*DatHuyVe(lstCB, lstMB, lstHK);
-			break;*/
+			QLDatHuyVe(lstCB, lstMB, lstHK);
+			break;
 		}
 		case 4:
 		{
@@ -68,6 +75,5 @@ int main(int argc, char** argv) {
 			return 0;
 		}
 	}
-	_getch();
 	return 0;
 }

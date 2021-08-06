@@ -15,19 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="mylib.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cau_truc_du_lieu.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="HamXuLi.cpp">
+    <ClCompile Include="XuLy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ctdl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mylib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
