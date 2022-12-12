@@ -1,7 +1,7 @@
 # ChuyenBay
 Cấu trúc dữ liệu và giải thuật
 
-=============================================== index Navigation ===============================================
+====== index Navigation ========
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import * as Types from "commons/Types";
@@ -198,7 +198,7 @@ export const Navigation = connect(
     mapDispatchToProps
 )(NavigationCP);
 
-=============================================== css Navigation.css ===============================================
+====== css Navigation.css ======
 
 .flex-row {
     display: flex;
