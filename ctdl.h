@@ -15,6 +15,7 @@ const int MAX_DAY = 10;
 const int MAX_DONG = 20;
 const int KC_GIO = 5;
 const int KC_GIOAM = 19;
+const int KC_GIOPM = 20;
 
 using namespace std;
 
@@ -190,7 +191,7 @@ int checkVeCung_CB(PTRChuyenBay p, HANHKHACH hk);
 PTRChuyenBay checkVeCungTime(PTRChuyenBay lstCB, PTRChuyenBay p, HANHKHACH hk);
 int checkHK_HuyVe(PTRChuyenBay p, HANHKHACH& hk);
 void QLDatHuyVe(PTRChuyenBay& lstCB, LIST_MB lstMB, TREEHanhKhach& lstHK);
-// =========================================== Hành khách ===================================
+// =========================================== Hï¿½nh khï¿½ch ===================================
 
 void init_HK(TREEHanhKhach& lstHK);
 int empty_HK(TREEHanhKhach lstHK);
